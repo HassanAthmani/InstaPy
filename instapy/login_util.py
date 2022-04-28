@@ -172,9 +172,9 @@ def check_browser(browser, logfolder, logger, proxy_address):
     # check connection status
     try:
         logger.info("-- Connection Checklist [1/2] (Internet Connection Status)")
-        browser.get("view-source:https://freegeoip.app/json")
-        pre = browser.find_element(By.TAG_NAME, "pre").text
-        current_ip_info = json.loads(pre)
+        browser.get("view-source:https://google.com")
+        pre = str(0)#browser.find_element(By.TAG_NAME, "pre").text
+        current_ip_info = {"ip":'127.0.0.1:80',"country_name":"Earth","country_code":"000"}#json.loads(pre)
         if (
             proxy_address is not None
             and socket.gethostbyname(proxy_address) != current_ip_info["ip"]
