@@ -51,7 +51,8 @@ Implemented in Python using the Selenium module.<p>
 
 <br />
 <p>
-	### Install this particular version using the following command:
+	
+	<b>Install this particular version using the following command:</b><br />
 	ps: git needs to be installed in the system.
 	
 	pip install git+git@github.com:HassanAthmani/InstaPy.git@master
